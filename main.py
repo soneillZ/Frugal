@@ -2,10 +2,6 @@ from tkinter import *
 from tkinter import filedialog
 from tkinter import messagebox
 
-# PLACE HOLDER
-def donothing():
-   x = 0
-
 def file_open():
     root.filename = filedialog.askopenfilename(initialdir='/python', title="Select file",
                                            filetypes=[("Text Files", "*.txt")])
@@ -28,8 +24,7 @@ def file_save():
     f.write(text2save)
     f.close()
 
-
-# SELECT ALL TEXT FUNCTION
+ON
 def select_all(event):
     input_text_area.tag_add(SEL, "1.0", END)
     input_text_area.mark_set(INSERT, "1.0")
@@ -37,7 +32,7 @@ def select_all(event):
     return 'break'
 
 root = Tk()
-# MENU
+
 menubar = Menu(root)
 filemenu = Menu(menubar, tearoff=0)
 filemenu.add_command(label="New", command=file_new)
@@ -52,7 +47,6 @@ helpmenu.add_command(label="Help Index", command=donothing)
 helpmenu.add_command(label="About...", command=help_about)
 menubar.add_cascade(label="Help", menu=helpmenu)
 
-# MAIN TEXT AREA
 input_text_area = Text(root)
 input_text_area.grid(row=1, column=0, columnspan=4, sticky=W+E)
 input_text_area.pack(expand=True, fill='both')
