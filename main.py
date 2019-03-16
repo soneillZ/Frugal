@@ -57,7 +57,6 @@ input_text_area = Text(root)
 input_text_area.grid(row=1, column=0, columnspan=4, sticky=W+E)
 input_text_area.pack(expand=True, fill='both')
 input_text_area.configure(background='white', fg='black')
-input_text_area.insert(INSERT, "This text editor was created by soneill and uses the tkinter library for python.")
 input_text_area.bind("<Control-Key-a>", select_all)
 input_text_area.bind("<Control-Key-A>", select_all) # just in case caps lock is on
 
