@@ -43,7 +43,6 @@ filemenu.add_command(label="Exit", command=root.quit)
 menubar.add_cascade(label="File", menu=filemenu)
 
 helpmenu = Menu(menubar, tearoff=0)
-helpmenu.add_command(label="Help Index", command=donothing)
 helpmenu.add_command(label="About...", command=help_about)
 menubar.add_cascade(label="Help", menu=helpmenu)
 
